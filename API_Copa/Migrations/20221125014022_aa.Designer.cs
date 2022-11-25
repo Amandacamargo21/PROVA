@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Models;
 
 namespace API_Copa.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20221125014022_aa")]
+    partial class aa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,24 +33,6 @@ namespace API_Copa.Migrations
                     b.Property<int?>("SelecaoBId")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("SelecaoAId");
-
-                    b.HasIndex("SelecaoBId");
-
-                    b.ToTable("Jogos");
-                });
-
-            modelBuilder.Entity("API_Copa.Models.Palpite", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("CriadoEm")
-                        .HasColumnType("TEXT");
-
                     b.Property<int>("golsSelecaoA")
                         .HasColumnType("INTEGER");
 
@@ -57,7 +41,11 @@ namespace API_Copa.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Palpites");
+                    b.HasIndex("SelecaoAId");
+
+                    b.HasIndex("SelecaoBId");
+
+                    b.ToTable("Jogos");
                 });
 
             modelBuilder.Entity("API_Copa.Models.Selecao", b =>

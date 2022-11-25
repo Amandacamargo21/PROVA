@@ -2,5 +2,34 @@
   <mat-card-header>
     <mat-card-title> Palpitar Jogo </mat-card-title>
   </mat-card-header>
-  <mat-card-content> </mat-card-content>
+  <mat-card-content>
+    <mat-form-field id="">
+      <mat-label for="">Seleção A:</mat-label>
+      <input matInput type="text" name="" />
+    </mat-form-field>
+    <br />
+    <mat-form-field id="">
+      <mat-label for="">Placar A:</mat-label>
+      <input matInput type="number" name="" />
+    </mat-form-field>
+    <br />
+    <mat-form-field id="">
+      <mat-label for="">Seleção B:</mat-label>
+      <input matInput type="text" name="" />
+    </mat-form-field>
+    <br />
+    <mat-form-field id="">
+      <mat-label for="">Placar B:</mat-label>
+      <input matInput type="text" name="" />
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="warn"
+      id="btnCadastrar"
+      (click)="palpitar()"
+    >
+      Palpitar
+    </button>
+  </mat-card-content>
 </mat-card>

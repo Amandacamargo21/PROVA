@@ -14,5 +14,6 @@ namespace API_Copa.Models
         public Selecao SelecaoA { get; set; }
         public Selecao SelecaoB { get; set; }
         public DateTime CriadoEm { get; set; }
+
     }
 }

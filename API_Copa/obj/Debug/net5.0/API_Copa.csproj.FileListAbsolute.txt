@@ -55,3 +55,4 @@ C:\Users\amand\OneDrive\Desktop\PROVA\API_Copa\obj\Debug\net5.0\API_Copa.dll
 C:\Users\amand\OneDrive\Desktop\PROVA\API_Copa\obj\Debug\net5.0\ref\API_Copa.dll
 C:\Users\amand\OneDrive\Desktop\PROVA\API_Copa\obj\Debug\net5.0\API_Copa.pdb
 C:\Users\amand\OneDrive\Desktop\PROVA\API_Copa\obj\Debug\net5.0\API_Copa.genruntimeconfig.cache
+C:\Users\amand\OneDrive\Desktop\PROVA\API_Copa\bin\Debug\net5.0\package-lock.json

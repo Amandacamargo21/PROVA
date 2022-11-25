@@ -33,5 +33,14 @@ namespace api.Controllers
             List<Jogo> jogos = _context.Jogos.Include(x => x.SelecaoA).Include(x => x.SelecaoB).ToList();
             return jogos.Count != 0 ? Ok(jogos) : NotFound();
         }
+
+        [Route("buscar/{id}")]
+        [HttpGet]
+        public IActionResult Buscar([FromRoute] int id)
+        {
+            Jogo jogo =
+                _context.Jogos.Find(id);
+            return jogo != null ? Ok(jogo) : NotFound();
+        }
     }
 }
