@@ -35,12 +35,12 @@ export class CadastrarJogoComponent implements OnInit {
   }
 
   cadastrar(): void {
-    console.log(this.selecaoA);
-    console.log(this.selecaoB);
+    console.log(this.selecaoAId);
+    console.log(this.selecaoBId);
 
     let jogo: Jogo = {
-      selecaoA: this.selecaoA,
-      selecaoB: this.selecaoB,
+      selecaoAId: this.selecaoAId,
+      selecaoBId: this.selecaoBId,
     };
 
     this.http
